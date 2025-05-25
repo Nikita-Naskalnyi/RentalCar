@@ -12,8 +12,8 @@ import {
 import storage from "redux-persist/lib/storage";
 
 import { CarCatalogReducer } from "./CarCatalog/slice";
-import { CarDetailsReducer } from "./carDetails/slice";
-import { brandsReducer } from "./carsBrands/slice";
+import { CarDetailsReducer } from "./CarDetails/slice";
+import { brandsReducer } from "./CarsBrands/slice";
 
 const persistConfig = {
   key: "root",
