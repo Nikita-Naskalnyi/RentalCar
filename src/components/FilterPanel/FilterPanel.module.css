@@ -1,0 +1,143 @@
+.panel {
+  max-width: 1260px;
+  padding: 84px 40px 56px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.selects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.selectGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 400;
+  line-height: 1.33333;
+  font-size: 12px;
+  color: #8d929a;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 1px;
+}
+
+.inputBox {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 0 16px;
+  height: 44px;
+  width: 160px;
+}
+
+.prefix {
+  color: #101828;
+  font-size: 16px;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+.inputBoxFirst {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-right: 1px solid #cfd3d8;
+}
+
+.inputBoxLast {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-left: -1px;
+}
+
+.mileageInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #101828;
+  width: 100%;
+}
+
+.searchBtn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 51px;
+  width: 156px;
+  height: 44px;
+  background: #3470ff;
+  border: none;
+  cursor: pointer;
+}
+
+.searchBtn:hover {
+  background: #3564d1;
+}
+
+@media (max-width: 767px) {
+  .panel {
+    padding: 40px 20px 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .selects {
+    flex-direction: column;
+    gap: 24px;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .selectGroup {
+    width: 100%;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .inputBox,
+  .searchBtn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .panel {
+    padding: 60px 30px 50px;
+  }
+
+  .selects {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .selectGroup {
+    min-width: 200px;
+  }
+
+  .inputBox {
+    width: auto;
+  }
+
+  .searchBtn {
+    width: 140px;
+    padding: 12px 30px;
+  }
+}

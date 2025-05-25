@@ -1,0 +1,37 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+  column-gap: 32px;
+  row-gap: 48px;
+  margin-bottom: 80px;
+}
+
+li {
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.emptyMessage {
+  margin: 40px auto;
+  padding: 20px 30px;
+  max-width: 400px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #555555;
+  background-color: #f0f4ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(52, 112, 255, 0.15);
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.emptyMessage:hover {
+  background-color: #d6e3ff;
+  color: #3470ff;
+  cursor: default;
+}

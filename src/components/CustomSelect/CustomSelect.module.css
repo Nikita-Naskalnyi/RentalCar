@@ -1,0 +1,66 @@
+.selectGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .label {
+    font-weight: 400;
+    line-height: 1.33333;
+    font-size: 12px;
+    color: #8d929a;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 204px;
+  }
+  
+  .select {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #101828;
+    border-radius: 12px;
+    padding: 12px 40px 12px 16px;
+    width: 100%;
+    background: #f7f7f7;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .select.selected {
+    color: #101828;
+  }
+  
+  .select option {
+    color: grey;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%) rotate(180deg);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .open {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  
+  @media (max-width: 767px) {
+    .wrapper {
+      width: 100%;
+    }
+  
+    .select {
+      width: 100%;
+    }
+  }
+  

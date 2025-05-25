@@ -1,0 +1,206 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+  padding: 84px 24px;
+  max-width: 1260px;
+  margin: 70px auto;
+}
+
+.image {
+  height: auto;
+  border-radius: 19px;
+  object-fit: cover;
+}
+.idWrapper {
+  display: flex;
+  align-items: baseline;
+}
+.imageSection {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  width: 53.3%;
+}
+
+.bookingSection {
+  padding: 32px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  background: white;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #101828;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #8d929a;
+  margin-bottom: 24px;
+}
+
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  width: 40.5%;
+}
+
+.headerBox {
+  margin-bottom: 68px;
+}
+
+.carHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #101828;
+}
+
+.carId {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #8d929a;
+  padding-left: 15px;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #101828;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  color: black;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #3470ff;
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.description {
+  font-size: 16px;
+  color: #101828;
+  line-height: 1.5;
+}
+.mapList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mapItem {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #101828;
+}
+
+.detailsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #101828;
+  margin-bottom: 20px;
+}
+
+li:not(:last-child) {
+  margin-bottom: 16px;
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 48px 20px;
+    gap: 40px;
+  }
+
+  .imageSection,
+  .detailsSection {
+    width: 100%;
+  }
+
+  .bookingSection {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    padding: 32px 16px;
+    gap: 32px;
+  }
+
+  .imageSection,
+  .detailsSection {
+    width: 100%;
+  }
+
+  .bookingSection {
+    padding: 20px;
+  }
+
+  .carHeader {
+    margin-bottom: 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .text,
+  .description,
+  .carId,
+  .infoItem,
+  .mapItem {
+    font-size: 14px;
+  }
+
+  .detailsBox {
+    gap: 40px;
+  }
+}

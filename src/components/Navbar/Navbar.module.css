@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  color: #101828;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #0b44cd;
+}
+
+.active {
+  color: #0b44cd;
+}
